@@ -10,10 +10,13 @@ export const GlobalStyle = createGlobalStyle`
   --primary-color: #BF9C75;
   --second-color: #FEFEFF;
   --third-color: #1F1F1F;
-  --fouth-color: #FFECD1;
+  --fouth-color: #fee4c0;
 }
 html {
   font-size: 62.5%;
+  @media (max-width:1100px) {
+    font-size: 55%;
+  }
 }
 body {
   background-color: var(--primary-color );
@@ -33,7 +36,7 @@ body {
   color: var(--primary-color);
   background-color: var(--fouth-color);
   border: none;
-  padding: 0rem 2rem !important;
+  padding: 0rem 2.5rem !important;
   border-radius: 50%;
 }
 .swiper-button-prev::after, .swiper-button-next::after {

@@ -7,6 +7,10 @@ padding: 6rem 0;
 display: flex;
 flex-direction: column;
 align-items: center;
+@media (max-width:600px){
+  padding: 4rem 1rem;
+}
+
 `
 
 export const ContainerTextWorks = styled.div`
@@ -19,7 +23,7 @@ p {
 
 export const ContainerCarousel = styled.div`
 width: 100%;
-padding: 6rem 1rem;
+padding: 6rem 1rem 1rem;
 `
 
 export const ContentCard = styled.div`

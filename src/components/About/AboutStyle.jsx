@@ -7,6 +7,12 @@ padding: 7rem 1rem;
 display: flex;
 align-items: center;
 gap: 2rem;
+@media (max-width:860px){
+  flex-direction: column;
+}
+@media (max-width:600px){
+  padding: 4rem 1rem;
+}
 
 `
 
@@ -19,10 +25,21 @@ export const ContentTextAbout = styled.div`
   h2, p{
     text-align: start;
   }
+  @media (max-width:860px){
+    width: 100%;
+    align-items: center;
+    h2, p{
+    text-align: center;
+  }
+}
+
 `
 
 export const ContainerCarousel = styled.div`
 width: 50%;
+@media (max-width:860px){
+    width: 80%;
+}
 `
 
 export const ContentCarouselAbout = styled.div`

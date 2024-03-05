@@ -11,4 +11,7 @@ export const ContentButton = styled.button`
   border-radius: 5px;
   border: 2px solid transparent;
   cursor: pointer;
+  @media (max-width: 650px) {
+    font-size: 1.8rem;
+}
 `

@@ -28,5 +28,11 @@ div > a > img {
   width: 24px;
   cursor: pointer;
 }
+ul, div {
+  @media (max-width:800px) {
+    
+    display: none;
+  }
+}
 `
 

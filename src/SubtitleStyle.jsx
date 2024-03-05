@@ -11,5 +11,7 @@ export const ContentSubtitle = styled.h3`
   line-height: 120%;
   //max-width: 600px;
 
-
+  @media (max-width: 650px) {
+    font-size: 1.8rem;
+}
 `

@@ -3,10 +3,14 @@ import styled from "styled-components"
 export const ContainerServices = styled.section`
   background-color: var(--second-color);
   width: 100%;
-  padding: 6rem 0;
+  padding: 6rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width:600px){
+  padding: 4rem 1rem;
+}
+
 `
 
 export const ContainerTextServices = styled.div`
@@ -26,24 +30,42 @@ p {
 export const ContainerCardsServices = styled.div`
 display: grid;
 grid-template-columns: repeat(3, 1fr);
+place-items: center;
 gap: 3rem 2rem;
 margin-top: 6rem;
+@media (max-width:1300px){
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width:860px){
+  grid-template-columns: 1fr;
+}
 `
 
 export const ContainerBannerServices = styled.div`
 
 display: flex;
 gap: 3.6rem;
-padding: 6rem 0;
+padding: 6rem 0 1rem;
 width: 100%;
 margin: 0 auto;
 max-width: 1280px;
+@media (max-width:800px){
+  flex-direction: column;
+  gap: 0;
+}
 div {
   padding: 0;
   cursor: pointer;
   position: relative;
+  @media (max-width:650px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }  
 }
+
 img {
+  width: 100%;
   transition: all .5s;
   scale: 1;
   border-radius: 5px;
@@ -51,6 +73,9 @@ img {
 img:hover {
   scale: 1.12;
   filter: brightness(40%);
+  @media (max-width:800px){
+  scale: 1;
+}
 }
 `
 

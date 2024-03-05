@@ -13,7 +13,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 gap: 3rem;
-padding-top: 20rem;
+padding: 20rem 1rem 0;
 position: absolute;
 top: 0;
 left: 0;
@@ -25,6 +25,7 @@ button {
 }
 p{
   color: var(--second-color);
+  text-align: center;
 }
 `
 
@@ -47,4 +48,11 @@ export const Title = styled.h1`
   text-align: center;
   line-height: 120%;
   max-width: 1280px;
+  @media (max-width:1100px) {
+    font-size: 6rem;
+  }
+  @media (max-width: 650px) {
+    font-size: 5rem;
+}
+
 `

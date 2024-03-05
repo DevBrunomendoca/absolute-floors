@@ -6,4 +6,7 @@ export const ContentParagraph = styled.p`
   font-size: 1.8rem;
   color: var(--third-color);
   line-height: 150%;
+  @media (max-width: 650px) {
+    font-size: 1.6rem;
+}
 `

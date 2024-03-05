@@ -8,4 +8,7 @@ export const ContentSecondTitle = styled.h2`
   text-align: center;
   line-height: 120%;
   //max-width: 600px;
+  @media (max-width: 650px) {
+    font-size: 4rem;
+}
 `

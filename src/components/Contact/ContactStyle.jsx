@@ -7,17 +7,26 @@ gap: 2rem;
 width: 100%;
 margin: 0 auto;
 max-width: 1280px;
-padding: 6rem 0;
+padding: 6rem 1rem;
+@media (max-width:800px) {
+  flex-direction: column;
+}
+@media (max-width:600px){
+  padding: 4rem 1rem;
+}
 `
 
 export const ContainerTextContact = styled.div`
 margin: 0 auto;
 max-width: 1280px;
 padding: 6rem 0;
-width: 50%;
+width: 100%;
 display:flex;
 flex-direction: column;
 gap: 2rem;
+@media (max-width:600px){
+  padding: 4rem 1rem;
+}
 h2{
   text-align: start;
 }
@@ -32,7 +41,7 @@ div>img {
 `
 
 export const ContainerFormContact = styled.div`
-width: 50%;
+width: 100%;
 display: flex;
 flex-direction: column;
 gap: 2rem;

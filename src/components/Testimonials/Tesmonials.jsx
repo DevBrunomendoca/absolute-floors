@@ -10,8 +10,24 @@ import {
 	ContentCardTestmonials,
 } from "./TesmonialsStyle";
 import { Autoplay } from "swiper/modules";
+import { useEffect, useState } from "react";
 
 const Testmonials = () => {
+	const [sliderPerview, setSliderPerview] = useState(2)
+
+	useEffect(() => {
+		function handleResize() {
+			window.innerWidth < 800
+			? setSliderPerview(1)
+			: setSliderPerview(2)
+		}
+		handleResize()
+		window.addEventListener('resize', handleResize)
+		return () => {
+			window.removeEventListener('resize', handleResize)
+		}
+	},[])
+
 	const data = [
 		{
 			id: "1",
@@ -46,7 +62,7 @@ const Testmonials = () => {
 			<ContainerCardTestmonials>
 				<Swiper
 					loop={true}
-					slidesPerView={2}
+					slidesPerView={sliderPerview}
 					spaceBetween={30}
 					centeredSlides={false}
 					autoplay={{

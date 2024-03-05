@@ -6,6 +6,8 @@ export const ContentTitleCard = styled.h4`
   font-weight: 500;
   font-size: 2rem;
   color: var(--third-color);
-
+  @media (max-width: 650px) {
+    font-size: 1.8rem;
+}
 
 `
