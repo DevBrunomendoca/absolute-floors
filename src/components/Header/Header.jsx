@@ -1,10 +1,26 @@
+import { useEffect, useState } from "react"
 import ListItens from "../../ListItens"
 import Logo from "../../Logo"
 import { ContainerHeader, Navigation } from "./HeaderStyle"
 
 const Header = () => {
+
+  const [onScrollY, setOnScrollY] = useState(false)
+
+  useEffect(() => {
+    function positionScrollY() {
+      window.scrollY > 100
+      ? setOnScrollY(true)
+      : setOnScrollY(false)
+    }
+    window.addEventListener('scroll', positionScrollY)
+    return() => {
+      window.removeEventListener('scroll', positionScrollY)
+    }
+  },[])
+
   return(
-    <ContainerHeader>
+    <ContainerHeader onScrollY={onScrollY}>
       <Navigation>
         <Logo />
         <ListItens />

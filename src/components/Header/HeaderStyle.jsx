@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const ContainerHeader = styled.header`
 width: 100%;
@@ -7,6 +7,11 @@ top: 0;
 padding: 1rem;
 background-color: transparent;
 z-index: 101;
+transition: ease-in-out .3s;
+${({onScrollY}) => onScrollY && css`
+
+background-color: rgba(254, 254, 254, .7);
+`}
 `
 export const Navigation = styled.nav`
 margin: 0 auto;
