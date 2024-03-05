@@ -10,6 +10,7 @@ import {
 
 import { SwiperSlide, Swiper } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import SecondTitle from "../../SecondTitle";
 
 const About = () => {
 	const data = [
@@ -22,7 +23,8 @@ const About = () => {
 	return (
 		<ContainerAbout>
 			<ContentTextAbout>
-				<Subtitle textSubtitle="Elevating quality and excellence in space transformation" />
+				<SecondTitle textSecondTitle='Elevating quality and excellence in space transformation'/>
+				{/* <Subtitle textSubtitle="Elevating quality and excellence in space transformation" /> */}
 				<Paragraph textParagraph="From meticulous demolition and precise installations to the delicate craft of wood refinishing, we bring unparalleled quality and excellence to every project. Our passion for transforming spaces is evident in the stunning before-and-after transformations we create." />
 				<Button textButton="Our Work" />
 			</ContentTextAbout>
