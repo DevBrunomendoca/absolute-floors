@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
-export const ContainerHome = styled.div`
+export const ContainerHome = styled.section`
 `
 
 export const ContentHome = styled.div`
-background-image: linear-gradient(180deg, rgba(31,31,31,0.10407913165266103) 0%, rgba(173,139,111,0.3393732492997199) 79%, rgba(191,156,117,1) 100%);
+background-image: linear-gradient(180deg, rgba(31,31,31,0.2) 0%, rgba(173,139,111,0.3393732492997199) 79%, rgba(191,156,117,1) 100%);
 width: 100%;
-height: 100%;
+height: 801px;
 
 display: flex;
 flex-direction: column;
@@ -15,7 +15,7 @@ justify-content: center;
 gap: 3rem;
 padding-top: 20rem;
 position: absolute;
-bottom: 7%;
+top: 0;
 left: 0;
 z-index: 100;
 
@@ -30,8 +30,9 @@ p{
 
 export const ConteinerBanner = styled.div`
   img{
-  width: 100%;
-  height: 860px;
+    width: 100%;
+    
+    height:800px;
   object-fit:cover;
 }
 `

@@ -9,7 +9,7 @@ const Home = () => {
 	const data = [
 		{ id: "1", imgUrl: "/banner-absolute-one.jpg" },
 		{ id: "2", imgUrl: "/banner-absolute-two.jpg" },
-		{ id: "3", imgUrl: "/banner-absolute-four.jpg" },
+		{ id: "3", imgUrl: "/banner-absolute-three.jpeg" },
 	];
 
 	return (
@@ -24,7 +24,6 @@ const Home = () => {
 					disableOnInteraction: false,
 				}}
 			>
-
 			{data.map((item) => (
         <SwiperSlide key={item.id}>
 					<ConteinerBanner>
