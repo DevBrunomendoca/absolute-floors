@@ -9,10 +9,53 @@ import {
 } from "./ContactStyle";
 import Input from "./Form";
 
+import { gsap } from 'gsap'
+import { useLayoutEffect, useRef } from 'react'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
 const Contact = () => {
+
+	const tl = useRef(null)
+  const el = useRef(null)
+
+  useLayoutEffect(() => {
+
+    gsap.registerPlugin(ScrollTrigger)
+    gsap.context(() => {
+      tl.current = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#container-contact",
+          start: "top bottom"
+        }
+      })
+
+        .fromTo("#conteiner-text-contact", {
+          opacity: 0,
+          x: -160
+        }, {
+          opacity: 1,
+          x: 0,
+          duration: 1.5
+        })
+        .fromTo("#conteiner-form-contact", {
+          opacity: 0,
+          x: -160
+        }, {
+          opacity: 1,
+          x: 0,
+          duration: 1.5
+        })
+        
+    })
+    return () => {
+      gsap.killTweensOf("#content-home")
+    }
+  }, [])
+
+
 	return (
-		<ContainerContact>
-			<ContainerTextContact>
+		<ContainerContact id="container-contact" rel={el}>
+			<ContainerTextContact id="conteiner-text-contact">
 				<SecondTitle textSecondTitle="Get Your Free In-Home Consultation" />
 				<Paragraph textParagraph="Discover a hassle-free experience with us. Schedule your free consultation today and let us bring our expertise to your doorstep." />
 
@@ -29,7 +72,7 @@ const Contact = () => {
 					<Paragraph textParagraph="absolutfloors@outlook.com" />
 				</div>
 			</ContainerTextContact>
-			<ContainerFormContact>
+			<ContainerFormContact id="conteiner-form-contact">
 				<div>
 					<Input 
             type="text" 

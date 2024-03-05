@@ -8,9 +8,48 @@ import {
 } from "./WorksStyle";
 import { SwiperSlide, Swiper } from "swiper/react";
 import { Autoplay} from 'swiper/modules';
-import { useEffect, useState } from "react";
+import { useEffect, useState, useLayoutEffect, useRef } from "react";
+
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const Works = () => {
+
+	const tl = useRef(null)
+  const el = useRef(null)
+
+  useLayoutEffect(() => {
+
+    gsap.registerPlugin(ScrollTrigger)
+    gsap.context(() => {
+      tl.current = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#container-work",
+          start: "top bottom"
+        }
+      })
+        .fromTo("#container-text-works", {
+          opacity: 0,
+          y: -80
+        }, {
+          opacity: 1,
+          y: 0,
+          duration: 1.5
+        })
+        .fromTo("#container-carousel-works", {
+          opacity: 0,
+          y: 100
+        }, {
+          opacity: 1,
+          y: 0,
+          duration: 1.5
+        })
+        
+    })
+    return () => {
+      gsap.killTweensOf("#container-work")
+    }
+  }, [])
 
   const [sliderPerview, setSliderPerview] = useState(3)
 
@@ -39,12 +78,12 @@ const Works = () => {
     { id: "7", imgUrl: "/carousel-absolute(7).png" }
   ];
 	return (
-		<ContainerWorks>
-			<ContainerTextWorks>
+		<ContainerWorks id="container-work" rel="el">
+			<ContainerTextWorks id="container-text-works">
 				<SecondTitle textSecondTitle="Our Works" />
 				<Paragraph textParagraph="Explore our gallery and discover excellence in every detail. From precise demolitions to flawless installations, each image tells the story of our passion for transforming spaces. Be inspired by the diversity and quality that define our unique approach." />
 			</ContainerTextWorks>
-			<ContainerCarousel>
+			<ContainerCarousel id="container-carousel-works">
 				<Swiper
           loop={true}
           slidesPerView={sliderPerview}

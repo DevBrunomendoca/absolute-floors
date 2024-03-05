@@ -10,10 +10,57 @@ import {
 	ContentCardTestmonials,
 } from "./TesmonialsStyle";
 import { Autoplay } from "swiper/modules";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useLayoutEffect, useRef  } from "react";
+
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const Testmonials = () => {
 	const [sliderPerview, setSliderPerview] = useState(2)
+
+	const tl = useRef(null)
+  const el = useRef(null)
+
+  useLayoutEffect(() => {
+
+    gsap.registerPlugin(ScrollTrigger)
+    gsap.context(() => {
+      tl.current = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#container-testimonial",
+          start: "top bottom"
+        }
+      })
+        .fromTo("#container-text-works", {
+          opacity: 0,
+          y: -80
+        }, {
+          opacity: 1,
+          y: 0,
+          duration: 1.5
+        })
+        .fromTo("#container-text-testimonial", {
+          opacity: 0,
+          y: -80
+        }, {
+          opacity: 1,
+          y: 0,
+          duration: 1.2
+        })
+        .fromTo("#container-card-testimonial", {
+          opacity: 0,
+          y: 100
+        }, {
+          opacity: 1,
+          y: 0,
+          duration: 1.2
+        })
+        
+    })
+    return () => {
+      gsap.killTweensOf("#container-testimonial")
+    }
+  }, [])
 
 	useEffect(() => {
 		function handleResize() {
@@ -54,12 +101,12 @@ const Testmonials = () => {
 		},
 	];
 	return (
-		<ContainerTestmonials>
-			<ContainerTextTestimonials>
+		<ContainerTestmonials id="container-testimonial" rel={el}>
+			<ContainerTextTestimonials id="container-text-testimonial">
 				<SecondTitle textSecondTitle="What they talk about us" />
 				<Subtitle textSubtitle="Check out some of our customer testimonials" />
 			</ContainerTextTestimonials>
-			<ContainerCardTestmonials>
+			<ContainerCardTestmonials id="container-card-testimonial">
 				<Swiper
 					loop={true}
 					slidesPerView={sliderPerview}
