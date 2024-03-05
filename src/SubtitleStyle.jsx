@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
 
-export const ContentSubtitle = styled.h2`
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 700;
+export const ContentSubtitle = styled.h3`
+  font-family: "Montserrat", serif;
+  font-weight: 500;
   font-style: normal;
-  color: var(--second-color);
-  font-size: 4.5rem;
+  color: var(--third-color);
+  font-size: 2rem;
   text-align: center;
   line-height: 120%;
-  max-width: 600px;
+  //max-width: 600px;
 
 
 `

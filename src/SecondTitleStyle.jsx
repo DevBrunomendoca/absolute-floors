@@ -7,5 +7,5 @@ export const ContentSecondTitle = styled.h2`
   font-size: 4.5rem;
   text-align: center;
   line-height: 120%;
-  max-width: 600px;
+  //max-width: 600px;
 `
