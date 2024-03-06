@@ -29,7 +29,7 @@ const Service = () => {
           start: "top bottom"
         }
       })
-        .fromTo("#container-text", {
+        .fromTo("#text-service", {
           opacity: 0,
           y: 160
         }, {
@@ -85,7 +85,7 @@ const Service = () => {
           x: 0,
           duration: 1.2
         })
-        .fromTo("#container-banner", {
+        .fromTo("#banner-service", {
           opacity: 0,
           y: -100
         }, {
@@ -102,7 +102,7 @@ const Service = () => {
 
 	return (
 		<ContainerServices id="container-service" rel={el}>
-			<ContainerTextServices id="container-text">
+			<ContainerTextServices id="text-service">
 				<SecondTitle textSecondTitle="Our Services" />
 				<Subtitle textSubtitle="Everything you need" />
 				<Paragraph textParagraph="We're dedicated to transforming spaces with precision and expertise. Explore our specialized services, from efficient demolition to flawless installations and expert wood refinishing. Discover how we can elevate your space with a touch of quality and innovation." />
@@ -139,7 +139,7 @@ const Service = () => {
           description='Experience seamless surfaces with our self-leveling floors. Achieve a perfectly even and smooth finish, also to prepare the new floor to be installed.'
         />
       </ContainerCardsServices>
-			<ContainerBannerServices id="container-banner"> 
+			<ContainerBannerServices id="banner-service"> 
         <div>
           <img src="banner-absolute-service(1).png" alt="" />
         </div>

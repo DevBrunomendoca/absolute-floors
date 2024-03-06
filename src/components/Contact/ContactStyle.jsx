@@ -66,18 +66,12 @@ label {
 }
 `
 export const ContentInput = styled.div`
+
 display: flex;
 flex-direction: column;
 gap: .4rem;
 width: 100%;
-<<<<<<< HEAD
 margin-top: 3rem;
-=======
-&:not(:first-child){
-  margin-top: 3rem;
-}
->>>>>>> 86334f040c397a0d7308e9e5f024e67fa83fb4cc
-
 input{
   padding:2rem 1rem;
   border-radius: 5px;

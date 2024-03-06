@@ -36,8 +36,11 @@ body {
   color: var(--primary-color);
   background-color: var(--fouth-color);
   border: none;
-  padding: 0rem 2.5rem !important;
+  padding: 0rem 2rem !important;
   border-radius: 50%;
+  @media (max-width:800px) {
+    padding: 0rem 2.5rem !important;
+  }
 }
 .swiper-button-prev::after, .swiper-button-next::after {
 

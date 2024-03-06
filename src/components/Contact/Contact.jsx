@@ -48,7 +48,7 @@ const Contact = () => {
         
     })
     return () => {
-      gsap.killTweensOf("#content-home")
+      gsap.killTweensOf("#container-contact")
     }
   }, [])
 
