@@ -40,6 +40,9 @@ width: 50%;
 @media (max-width:860px){
     width: 80%;
 }
+@media (max-width:500px){
+    width: 100%;
+}
 `
 
 export const ContentCarouselAbout = styled.div`

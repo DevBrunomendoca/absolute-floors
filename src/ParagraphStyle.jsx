@@ -9,4 +9,7 @@ export const ContentParagraph = styled.p`
   @media (max-width: 650px) {
     font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+    font-size: 1.5rem;
+}
 `

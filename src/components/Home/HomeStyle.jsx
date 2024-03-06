@@ -18,6 +18,9 @@ position: absolute;
 top: 0;
 left: 0;
 z-index: 100;
+@media (max-width:550px) {
+  height: 601px;
+}
 
 button {
   background-color: var(--primary-color);
@@ -35,6 +38,9 @@ export const ConteinerBanner = styled.div`
     
     height:800px;
   object-fit:cover;
+  @media (max-width:550px) {
+  height: 600px;
+}
 }
 `
 
@@ -53,6 +59,12 @@ export const Title = styled.h1`
   }
   @media (max-width: 650px) {
     font-size: 5rem;
+}
+@media (max-width: 550px) {
+    font-size: 4rem;
+}
+@media (max-width: 420px) {
+    font-size: 3rem;
 }
 
 `
