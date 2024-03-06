@@ -82,7 +82,7 @@ export const ContentTextArea = styled.div`
 display: flex;
 flex-direction: column;
 gap: .4rem;
-margin-top: 3rem;
+margin: 3rem 0;
 textarea {
   padding:2rem 1rem;
   border-radius: 5px;
