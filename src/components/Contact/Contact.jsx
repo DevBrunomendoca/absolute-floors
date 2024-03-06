@@ -60,15 +60,15 @@ const Contact = () => {
 				<Paragraph textParagraph="Discover a hassle-free experience with us. Schedule your free consultation today and let us bring our expertise to your doorstep." />
 
 				<div>
-					<img src="/icon-building.png" alt="" />
+					<img src="/icone-apartamento.png" alt="" />
 					<Paragraph textParagraph="Kennesaw Ga 30152" />
 				</div>
 				<div>
-					<img src="/icon-telephone.png" alt="" />
+					<img src="/icone-telefone.png" alt="" />
 					<Paragraph textParagraph="(770) 355-3943" />
 				</div>
 				<div>
-					<img src="/icon-email.png" alt="" />
+					<img src="/icone-email.png" alt="" />
 					<Paragraph textParagraph="absolutfloors@outlook.com" />
 				</div>
 			</ContainerTextContact>
