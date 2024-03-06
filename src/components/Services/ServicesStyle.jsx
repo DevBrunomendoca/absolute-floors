@@ -10,7 +10,6 @@ export const ContainerServices = styled.section`
   @media (max-width:600px){
   padding: 4rem 1rem;
 }
-
 `
 
 export const ContainerTextServices = styled.div`
@@ -38,6 +37,7 @@ margin-top: 6rem;
 }
 @media (max-width:860px){
   grid-template-columns: 1fr;
+  gap: 1.5rem 2rem;
 }
 `
 

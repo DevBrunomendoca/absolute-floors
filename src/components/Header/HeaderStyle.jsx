@@ -10,7 +10,7 @@ z-index: 101;
 transition: ease-in-out .3s;
 ${({onScrollY}) => onScrollY && css`
 
-background-color: rgba(254, 254, 254, .7);
+background-color: rgba(254, 254, 254, .9);
 `}
 `
 export const Navigation = styled.nav`

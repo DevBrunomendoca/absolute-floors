@@ -9,10 +9,7 @@ align-items: center;
 gap: 6rem;
 @media (max-width:600px){
   padding: 4rem 1rem 2rem;
-}
-
-h4{
-  text-align: start;
+  text-align: center;
 }
 ul {
   flex-direction: column;

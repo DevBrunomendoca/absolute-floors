@@ -14,4 +14,7 @@ export const ContentSubtitle = styled.h3`
   @media (max-width: 650px) {
     font-size: 1.8rem;
 }
+  @media (max-width: 500px) {
+    font-size: 1.7rem;
+}
 `

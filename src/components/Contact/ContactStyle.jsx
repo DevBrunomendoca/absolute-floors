@@ -7,12 +7,12 @@ gap: 2rem;
 width: 100%;
 margin: 0 auto;
 max-width: 1280px;
-padding: 6rem 1rem;
+padding: 4rem 1rem;
 @media (max-width:800px) {
   flex-direction: column;
 }
 @media (max-width:600px){
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
 }
 `
 
@@ -44,10 +44,12 @@ export const ContainerFormContact = styled.div`
 width: 100%;
 display: flex;
 flex-direction: column;
-gap: 2rem;
-div {
+div:first-child {
   display: flex;
   column-gap: 2rem;
+  @media (max-width:400px) {
+    flex-direction: column;
+  }
 }
 
 label {
@@ -58,6 +60,9 @@ label {
   font-size: 2rem;
   text-align: start;
   line-height: 120%;
+  @media (max-width:600px) {
+    font-size: 1.8rem;
+  }
 }
 `
 export const ContentInput = styled.div`
@@ -65,6 +70,7 @@ display: flex;
 flex-direction: column;
 gap: .4rem;
 width: 100%;
+margin-top: 3rem;
 
 input{
   padding:2rem 1rem;
@@ -76,6 +82,7 @@ export const ContentTextArea = styled.div`
 display: flex;
 flex-direction: column;
 gap: .4rem;
+margin-top: 3rem;
 textarea {
   padding:2rem 1rem;
   border-radius: 5px;

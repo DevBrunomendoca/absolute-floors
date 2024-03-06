@@ -10,5 +10,9 @@ export const ContentSecondTitle = styled.h2`
   //max-width: 600px;
   @media (max-width: 650px) {
     font-size: 4rem;
+    font-weight: 500;
+}
+@media (max-width: 500px) {
+    font-size: 3.3rem;
 }
 `
