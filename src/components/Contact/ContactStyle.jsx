@@ -40,7 +40,7 @@ div>img {
 }
 `
 
-export const ContainerFormContact = styled.div`
+export const ContainerFormContact = styled.form`
 width: 100%;
 display: flex;
 flex-direction: column;

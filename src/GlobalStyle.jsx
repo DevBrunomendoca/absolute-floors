@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 :root {
   --primary-color: #BF9C75;
   --second-color: #FEFEFF;
-  --third-color: #1F1F1F;
+  --third-color: #363435;
   --fouth-color: #fee4c0;
 }
 html {
