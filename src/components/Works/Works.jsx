@@ -25,7 +25,7 @@ const Works = () => {
       tl.current = gsap.timeline({
         scrollTrigger: {
           trigger: "#container-work",
-          start: "top bottom"
+          start: "120px bottom"
         }
       })
         .fromTo("#container-text-works", {

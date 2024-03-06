@@ -28,17 +28,9 @@ const Testmonials = () => {
       tl.current = gsap.timeline({
         scrollTrigger: {
           trigger: "#container-testimonial",
-          start: "top bottom"
+          start: "100px bottom"
         }
       })
-        .fromTo("#container-text-works", {
-          opacity: 0,
-          y: -80
-        }, {
-          opacity: 1,
-          y: 0,
-          duration: 1.5
-        })
         .fromTo("#container-text-testimonial", {
           opacity: 0,
           y: -80

@@ -26,7 +26,7 @@ const Service = () => {
       tl.current = gsap.timeline({
         scrollTrigger: {
           trigger: "#container-service",
-          start: "top bottom"
+          start: "200px bottom"
         }
       })
         .fromTo("#text-service", {
