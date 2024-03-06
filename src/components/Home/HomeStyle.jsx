@@ -19,7 +19,11 @@ top: 0;
 left: 0;
 z-index: 100;
 @media (max-width:550px) {
+<<<<<<< HEAD
   height: 701px;
+=======
+  height: 601px;
+>>>>>>> 86334f040c397a0d7308e9e5f024e67fa83fb4cc
 }
 
 button {
@@ -39,7 +43,11 @@ export const ConteinerBanner = styled.div`
     height:800px;
   object-fit:cover;
   @media (max-width:550px) {
+<<<<<<< HEAD
   height: 700px;
+=======
+  height: 600px;
+>>>>>>> 86334f040c397a0d7308e9e5f024e67fa83fb4cc
 }
 }
 `
