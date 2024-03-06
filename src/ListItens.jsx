@@ -1,9 +1,9 @@
 import Link from "./Links"
 import { ContainerListItens } from "./ListItenStyle"
 
-const ListItens = () => {
+const ListItens = ({onClick}) => {
   return(
-    <ContainerListItens>
+    <ContainerListItens onClick={onClick}>
       <li><Link LinksTitle="Home"/></li>
       <li><Link LinksTitle="Services"/></li>
       <li><Link LinksTitle="Our Work"/></li>

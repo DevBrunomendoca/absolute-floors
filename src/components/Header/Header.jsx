@@ -2,10 +2,14 @@ import { useEffect, useState } from "react"
 import ListItens from "../../ListItens"
 import Logo from "../../Logo"
 import { ContainerHeader, Navigation } from "./HeaderStyle"
+import IconSideBar from "./IconSideBar"
+import SideBar from "./SideBar"
 
 const Header = () => {
-
   const [onScrollY, setOnScrollY] = useState(false)
+  const [sideBar , setSideBar] = useState(false)
+
+  const toggleSideBar = () => setSideBar(!sideBar)
 
   useEffect(() => {
     function positionScrollY() {
@@ -20,7 +24,7 @@ const Header = () => {
   },[])
 
   return(
-    <ContainerHeader onScrollY={onScrollY}>
+    <ContainerHeader sideBar={sideBar} onScrollY={onScrollY}>
       <Navigation>
         <Logo />
         <ListItens />
@@ -29,6 +33,9 @@ const Header = () => {
           <a href=""><img src="/instagram.png" alt="" /></a>
         </div>
       </Navigation>
+      <IconSideBar sideBar={sideBar} onClick={toggleSideBar}/>
+      {sideBar && <SideBar sideBar={sideBar} setSideBar={setSideBar} />}
+      
     </ContainerHeader>
   )
 }
