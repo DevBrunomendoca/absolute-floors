@@ -60,7 +60,7 @@ const Contact = () => {
 				<Paragraph textParagraph="Discover a hassle-free experience with us. Schedule your free consultation today and let us bring our expertise to your doorstep." />
 
 				<div>
-					<img src="/icone-apartamento.png" alt="" />
+					<img src="/icone-predio.png" alt="" />
 					<Paragraph textParagraph="Kennesaw Ga 30152" />
 				</div>
 				<div>

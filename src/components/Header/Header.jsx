@@ -29,8 +29,9 @@ const Header = () => {
         <Logo />
         <ListItens />
         <div>
-          <a href=""><img src="/whatsapp.png" alt="" /></a>
-          <a href=""><img src="/instagram.png" alt="" /></a>
+          <a href=""><img src="/icone-whatsapp.png" alt="" /></a>
+          <a href=""><img src="/icone-instagram.png" alt="" /></a>
+          <a href=""><img src="/icone-email.png" alt="" /></a>
         </div>
       </Navigation>
       <IconSideBar sideBar={sideBar} onClick={toggleSideBar}/>
