@@ -20,6 +20,10 @@ const Footer = () => {
 					<Paragraph textParagraph="Marietta" />
 					<Paragraph textParagraph="Atlanta" />
 					<Paragraph textParagraph="Acworth" />
+					<Paragraph textParagraph="Kennesaw" />
+					<Paragraph textParagraph="Smyrna" />
+					<Paragraph textParagraph="Powder Springs" />
+					<Paragraph textParagraph="Alpharetta" />
 				</div>
 				<Logo />
 			</ContainerCities>
@@ -27,16 +31,15 @@ const Footer = () => {
 			<ContainerOurServices>
         <TitleCard textTitleCard='Our Services'/>
         <div>
-          <Paragraph textParagraph='Hardwood Flor Installation'/>
+          <Paragraph textParagraph='Hardwood Floor Installation'/>
           <Paragraph textParagraph='Hardwood Floor Refinishing'/>
-          <Paragraph textParagraph='Hardwood Floor Polishing'/>
-          <Paragraph textParagraph='Iron Baluster Installation'/>
-          <Paragraph textParagraph='Cleaning Hardwood Floors'/>
-          <Paragraph textParagraph='Oak Flooring'/>
-          <Paragraph textParagraph='Hardwood'/>
+          <Paragraph textParagraph='Iron Baluster'/>
+          <Paragraph textParagraph='Cleaning Hardwood Floor'/>
           <Paragraph textParagraph='Laminate Flooring'/>
-          <Paragraph textParagraph='Tile Flooring'/>
-          <Paragraph textParagraph='Carpeting'/>
+          <Paragraph textParagraph='Luxury Vinyl Plank'/>
+          <Paragraph textParagraph='Tile'/>
+          <Paragraph textParagraph='Carpet'/>
+          <Paragraph textParagraph='Staircase'/>
         </div>
       </ContainerOurServices>
       <ListItens />

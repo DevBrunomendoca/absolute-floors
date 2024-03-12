@@ -1,8 +1,8 @@
 import { ContentLinks } from "./LinksStyle"
 
-const Link = ({LinksTitle}) => {
+const Link = ({LinksTitle, hrefLinks}) => {
   return(
-  <ContentLinks href="#">{LinksTitle}</ContentLinks>
+  <ContentLinks href={hrefLinks}>{LinksTitle}</ContentLinks>
 )
 }
 

@@ -64,12 +64,11 @@ const About = () => {
 			<ContentTextAbout id="text-about">
 				<SecondTitle textSecondTitle='Elevating quality and excellence in space transformation'/>
 				<Paragraph textParagraph="From meticulous demolition and precise installations to the delicate craft of wood refinishing, we bring unparalleled quality and excellence to every project. Our passion for transforming spaces is evident in the stunning before-and-after transformations we create." />
-				<Button textButton="Our Work" />
+				<Button href="#container-work" textButton="Our Work" />
 			</ContentTextAbout>
 			<ContainerCarousel id="carousel-about">
 				<Swiper
 					slidesPerView={1}
-					//spaceBetween={30}
 					loop={true}
 					navigation={true}
 					modules={[Navigation]}

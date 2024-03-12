@@ -29,9 +29,9 @@ const Header = () => {
         <Logo />
         <ListItens />
         <div>
-          <a href=""><img src="/icone-whatsapp.png" alt="" /></a>
-          <a href=""><img src="/icone-instagram.png" alt="" /></a>
-          <a href=""><img src="/icone-email.png" alt="" /></a>
+          <a target='_blank' href="https://wa.me/17703553943?text=Thank+you+for+contacting+Absolut+Floors.+Please+let+us+know+how+we+can+help+and+we+will+get+back+to+you."><img src="/icone-whatsapp.png" alt="Icone Whatsapp" /></a>
+          <a target='_blank' href="https://www.instagram.com/absolutfloors?igsh=MWx6eWphOXVmMm1u"><img src="/icone-instagram.png" alt="Icone Instagram" /></a>
+          <a target='_blank' href="mailto:Absolutfloors@outlook.com"><img src="/icone-email.png" alt="Icone Email" /></a>
         </div>
       </Navigation>
       <IconSideBar sideBar={sideBar} onClick={toggleSideBar}/>

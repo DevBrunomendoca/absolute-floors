@@ -4,10 +4,10 @@ import { ContainerListItens } from "./ListItenStyle"
 const ListItens = ({onClick}) => {
   return(
     <ContainerListItens onClick={onClick}>
-      <li><Link LinksTitle="Home"/></li>
-      <li><Link LinksTitle="Services"/></li>
-      <li><Link LinksTitle="Our Work"/></li>
-      <li><Link LinksTitle="Contact Us"/></li>
+      <li><Link hrefLinks='#content-home' LinksTitle="Home"/></li>
+      <li><Link hrefLinks='#container-service' LinksTitle="Services"/></li>
+      <li><Link hrefLinks='#container-work' LinksTitle="Our Work"/></li>
+      <li><Link hrefLinks='#container-contact' LinksTitle="Contact Us"/></li>
     </ContainerListItens>
   )
 }
