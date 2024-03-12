@@ -57,8 +57,7 @@ const About = () => {
 		{ id: "2", imgUrl: "/imagem-absolute-about(2).png" },
 		{ id: "3", imgUrl: "/imagem-absolute-about(3).png" },
 		{ id: "4", imgUrl: "/imagem-absolute-about(4).png" },
-		{ id: "4", imgUrl: "/imagem-absolute-about(5).png" },
-		{ id: "4", imgUrl: "/imagem-absolute-about(6).png" }
+		{ id: "5", imgUrl: "/imagem-absolute-about(6).png" }
 	];
 
 	return (

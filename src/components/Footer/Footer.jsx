@@ -44,7 +44,7 @@ const Footer = () => {
       </ContainerOurServices>
       <ListItens />
       </ContentFooter>
-      <Paragraph textParagraph='Copyright © - Dlack Tecnologia - Todos os direitos reservados'/>
+      <Paragraph textParagraph='Copyright © - Dlack Tecnologia - All rights reserved'/>
 		</ContainerFooter>
 	);
 };
