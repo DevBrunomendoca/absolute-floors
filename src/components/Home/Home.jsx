@@ -43,6 +43,7 @@ const Home = () => {
 		{ id: "1", imgUrl: "/banner-absolute-one.jpg" },
 		{ id: "2", imgUrl: "/banner-absolute-two.jpg" },
 		{ id: "3", imgUrl: "/banner-absolute-three.jpeg" },
+		{ id: "4", imgUrl: "/banner-absolute-four.jpeg" }
 	];
 
 	return (
