@@ -34,5 +34,6 @@ div{
 }
 img {
   width: 70px;
+  border-radius: 50%;
 }
 `

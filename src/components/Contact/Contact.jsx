@@ -72,7 +72,7 @@ const Contact = () => {
 					<Paragraph textParagraph="absolutfloors@outlook.com" />
 				</div>
 			</ContainerTextContact>
-			<ContainerFormContact id="conteiner-form-contact">
+			<ContainerFormContact action="https://formsubmit.co/Absolutfloors@outlook.com" method="POST" id="conteiner-form-contact">
 				<div>
 					<Input 
             type="text" 
@@ -108,7 +108,7 @@ const Contact = () => {
           <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your Message here"></textarea>
         </ContentTextArea>
       
-        <Button textButton='Send Message'/>
+        <Button type="submit" textButton='Send Message'/>
 			</ContainerFormContact>
     
 		</ContainerContact>
