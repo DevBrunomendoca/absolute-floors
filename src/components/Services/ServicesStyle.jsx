@@ -40,6 +40,49 @@ margin-top: 6rem;
   gap: 1.5rem 2rem;
 }
 `
+export const ContainerEpoxy = styled.div`
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding-top: 2rem;
+
+  display: flex;
+
+  img{
+    width: 60%;
+  }
+  div{
+    width: 40%;
+    height: 400px;
+    background-color: var(--fouth-color);
+    text-align: center;
+    padding: 1.8rem 2rem;
+    //height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+    border-radius: 5px;
+    h4{
+      color: var(--primary-color);
+}
+  }
+  @media (max-width:1100px) {
+    flex-direction: column;
+    align-items: center;
+    div{
+      width: 60% ;
+      height: 100%;
+    }
+    @media (max-width:700px) {
+      img, div{
+        width:100%
+      }
+    }
+  }
+`
+
+//export const ContentTextEpoxy = styled.div``
 
 export const ContainerBannerServices = styled.div`
 
