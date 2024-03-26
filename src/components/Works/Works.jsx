@@ -76,7 +76,9 @@ const Works = () => {
     { id: "5", imgUrl: "/carousel-absolute(5).png" },
     { id: "6", imgUrl: "/carousel-absolute(6).png" },
     { id: "7", imgUrl: "/carousel-absolute(7).png" },
-    { id: "8", imgUrl: "/carousel-absolute(8).png" }
+    { id: "8", imgUrl: "/carousel-absolute(8).png" },
+    { id: "9", imgUrl: "/image-epoxy.png" }
+
   ];
 	return (
 		<ContainerWorks id="container-work" rel="el">

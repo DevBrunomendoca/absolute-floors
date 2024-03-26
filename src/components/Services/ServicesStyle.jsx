@@ -41,19 +41,21 @@ margin-top: 6rem;
 }
 `
 export const ContainerEpoxy = styled.div`
-  width: 100%;
+  //width: 100%;
   margin: 0 auto;
   max-width: 1280px;
   padding-top: 2rem;
+  
 
   display: flex;
+  align-items: center;
 
   img{
     width: 60%;
   }
   div{
-    width: 40%;
-    height: 400px;
+    max-width:620px;
+    //height: 400px;
     background-color: var(--fouth-color);
     text-align: center;
     padding: 1.8rem 2rem;

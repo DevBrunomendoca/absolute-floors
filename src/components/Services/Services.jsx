@@ -184,7 +184,6 @@ const Service = () => {
         />
       </ContainerCardsServices>
       <ContainerEpoxy id="container-epoxy">
-        <img src="/image-epoxy.png" alt="" />
         <div>
           <ContentTitleCard>Epoxy Floors</ContentTitleCard>
           <ContentParagraph>
