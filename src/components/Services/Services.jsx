@@ -119,11 +119,11 @@ const Service = () => {
           "#container-epoxy",
           {
             opacity: 0,
-            y: -100,
+            x: -160,
           },
           {
             opacity: 1,
-            y: 0,
+            x: 0,
             duration: 1.2,
           }
         ).fromTo(
