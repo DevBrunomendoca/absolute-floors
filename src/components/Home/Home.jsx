@@ -67,7 +67,7 @@ const Home = () => {
 			))}
       </Swiper>
 			<ContentHome id="content-home">
-				<Title>TRANSFORMING SPACES WITHT QUALITY AND EXCELLENCE</Title>
+				<Title>TRANSFORMING SPACES WITH QUALITY AND EXCELLENCE</Title>
 				<Paragraph textParagraph="High-quality demolition, installations, and touch-ups in impressive transformations." />
 				<Button href="#container-contact" textButton="Free Consulation" />
 			</ContentHome>
